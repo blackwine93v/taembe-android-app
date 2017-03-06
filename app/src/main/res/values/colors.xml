@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="white">#ffff</color>
+    <color name="green">#008000</color>
+    <color name="Indigo50">#E8EAF6</color>
+    <color name="Indigo100">#C5CAE9</color>
+    <color name="Indigo200">#9FA8DA</color>
+    <color name="Indigo300">#7986CB</color>
+    <color name="Indigo400">#5C6BC0</color>
+    <color name="Indigo500">#3f51b5</color>
+    <color name="Indigo600">#3949AB</color>
+    <color name="Indigo700">#303F9F</color>
+    <color name="Indigo800">#283593</color>
+    <color name="Indigo900">#1A237E</color>
+    <color name="IndigoA100">#8c9eff</color>
+    <color name="IndigoA200">#536DFE</color>
+    <color name="IndigoA400">#3D5AFE</color>
+    <color name="IndigoA700">#304FFE</color>
+    <color name="Price">#0097A7</color>
+    <color name="OldPrice">#a89ea9</color>
+
+
+    <color name="appBackground">@color/Indigo50</color>
+</resources>

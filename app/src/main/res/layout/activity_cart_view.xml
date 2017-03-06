@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cart_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="taembe.example.blackwine.taembe.view.cart.CartView">
+
+    <include
+        android:id="@+id/include_toolbar_cart_view"
+        layout="@layout/toolbar_layout" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/recyclerViewListItemCartView"
+        android:background="#000"/>
+    <RelativeLayout
+        android:id="@+id/layoutSumary"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        >
+        <LinearLayout
+            android:id="@+id/lLayoutTotalPriceCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:padding="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTitleTotalPrice"
+                android:textSize="18dp"
+                android:text="@string/total"/>
+            <TextView
+                android:layout_weight=".5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTotalPrice"
+                android:textColor="@color/Indigo600"
+                android:textSize="18dp"
+                android:text="0đ"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvNoticeCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:layout_below="@+id/lLayoutTotalPriceCart"
+            android:text="@string/apply_coupon_at_checkout_page"/>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCheckout"
+            android:layout_below="@+id/tvNoticeCart"
+            android:backgroundTint="@color/Indigo200"
+            android:text="Thanh toán ngay"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/include_toolbar_cart_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layoutSumary"
+        android:id="@+id/recyclerViewListItemCartView"></android.support.v7.widget.RecyclerView>
+</RelativeLayout>

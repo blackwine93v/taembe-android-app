@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_location_city_black_24dp"
+            android:title="Đến cửa hàng" />
+        <item
+            android:id="@+id/nav_account_management"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Tài khoản của bạn" />
+    </group>
+
+    <item android:title="Chia sẻ và hỗ trợ">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:actionProviderClass="android.widget.ShareActionProvider"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_support"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Góp ý với chúng tôi" />
+        </menu>
+    </item>
+
+</menu>

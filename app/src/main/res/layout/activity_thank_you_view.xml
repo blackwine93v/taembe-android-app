@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_thank_you_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="taembe.example.blackwine.taembe.view.thankyou.ThankYouView">
+
+    <TextView
+        android:id="@+id/tvTitleThankyou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cảm ơn bạn\nđã mua hàng tại Tã em bé"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textSize="25dp"/>
+    <ImageView
+        android:id="@+id/ivThankyou"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_below="@+id/tvTitleThankyou"
+        android:src="@drawable/thankyou"/>
+    <View
+        android:id="@+id/lineThankyou"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ivThankyou"
+        android:layout_marginBottom="20dp"
+        android:background="#000"/>
+    <LinearLayout
+        android:id="@+id/lLayoutContainThankyou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/lineThankyou"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvTitleOrderNumberThankyou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Mã đơn hàng"
+            android:gravity="center"
+            android:textSize="20dp"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tvOrderNumberThankyou"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="20dp"/>
+
+            <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/progressBarOrderNumberCheckout" />
+        </RelativeLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnReturnShopThankyou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lLayoutContainThankyou"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Quay lại cửa hàng"/>
+
+
+
+</RelativeLayout>

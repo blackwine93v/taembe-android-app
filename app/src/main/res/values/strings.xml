@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Tã em bé</string>
+    <string name="Promotion">Khuyến mãi</string>
+    <string name="Product">Sản phẩm</string>
+    <string name="hot_product">Sản phẩm nổi bật</string>
+    <string name="new_product">Sản phẩm mới</string>
+    <string name="sale_product">Sản phẩm đang khuyến mãi</string>
+    <string name="money_unit">đ</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="cart">Giỏ hàng</string>
+    <string name="your_cart">Giỏ hàng của bạn</string>
+    <string name="add_to_cart">Thêm vào giỏ hàng</string>
+    <string name="product_description">Mô tả sản phẩm</string>
+    <string name="sku">Mã hàng</string>
+    <string name="made_in">Nơi sản xuất</string>
+    <string name="brand">Thương hiệu</string>
+    <string name="total">Tổng cộng</string>
+    <string name="apply_coupon_at_checkout_page">Áp dụng mã giảm giá tại trang thanh toán</string>
+    <string name="please_select_options">Vui lòng chọn màu sắc, kích cỡ,...</string>
+    <string name="added_to_cart">Đã thêm vào giỏ hàng</string>
+    <string name="success_cart_updated">Cập nhật giỏ hàng thành công</string>
+    <string name="failed_cart_updated">Lỗi khi cập nhật giỏ hàng, xin thử lại</string>
+    <string name="success_product_deleted_from_cart">Xóa sản phẩm khỏi giỏ hàng thành công</string>
+    <string name="failed_product_deleted_from_cart">Lỗi khi xóa sản phẩm khỏi giỏ hàng, xin thử lại</string>
+    <string name="share_app_message">Hãy tải ứng dụng Tã em bé để cùng nhau mua sắm các sản phẩm cho mẹ và bé một cách tiện lợi và nhanh chóng. Tải tại đây: https://taembe.vn</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

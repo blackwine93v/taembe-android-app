@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_checkout_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="taembe.example.blackwine.taembe.view.checkout.CheckoutView">
+
+    <include layout="@layout/toolbar_layout"
+        android:id="@+id/include_toolbar_product_checkout"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollviewLayoutCheckout"
+        android:layout_below="@id/include_toolbar_product_checkout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lLaylout_content_checkout"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#484444"
+                android:text="Thông tin đặt hàng (vui lòng cung cấp đầy đủ)"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/border"
+                android:orientation="vertical">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:id="@+id/editTextYournameCheckout"
+                        android:lines="1"
+                        android:hint="Tên của bạn"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:id="@+id/editTextEmailCheckout"
+                        android:hint="Email"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:id="@+id/editTextYourphoneCheckout"
+                        android:hint="Số điện thoại"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerCountryCheckout"
+                    ></Spinner>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerDistrictCheckout"
+                    ></Spinner>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerWardCheckout"
+                    ></Spinner>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editTextStreetCheckout"
+                        android:maxLines="1"
+                        android:hint="Số nhà cụ thể"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="#484444"
+                android:text="Mục khác (không yêu cầu)"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/border"
+                android:orientation="vertical">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:maxLines="3"
+                        android:id="@+id/editTextNoteCheckout"
+                        android:layout_weight="1"
+                        android:textSize="15dp"
+                        android:hint="Ghi chú đơn hàng"/>
+                </android.support.design.widget.TextInputLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:id="@+id/editTextCoupon"
+                        android:hint="Mã giảm giá"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/Indigo50"
+                        android:id="@+id/btnApplyCouponCheckout"
+                        android:text="Áp dụng"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/lLayoutFeeShipCheckout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvTitleFeeShipCheckout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:text="Phí giao hàng"/>
+
+                    <TextView
+                        android:id="@+id/tvFeeShipCheckout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:textColor="#FF5722"
+                        android:textSize="15dp"
+                        android:text="0"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lLayouDisountCheckout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvTitleDisountCheckout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:text="Được giảm giá"/>
+
+                    <TextView
+                        android:id="@+id/tvDisountCheckout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:text="0"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lLayoutFinalTotalCheckout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvTitleFinalTotalCheckout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:text="Tổng thanh toán"/>
+
+                    <TextView
+                        android:id="@+id/tvFinalTotalCheckout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#8BC34A"
+                        android:textSize="15dp"
+                        android:layout_weight=".6"
+                        android:text="0"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSubmitCheckout"
+                android:backgroundTint="@color/Indigo400"
+                android:layout_gravity="center"
+                android:text="Thực hiện thanh toán"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
